@@ -72,11 +72,4 @@ Every push to the main branch automatically triggers a new build and deployment.
 
 ---
 
-### 🏁 License
-
-This project is open source and available under the [MIT License](LICENSE).
-Feel free to fork, use, and build upon it ⭐
-
----
-
 > *“Showcasing my work and passion through technology 💻”*
