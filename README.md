@@ -1,4 +1,5 @@
 # 💻 Rajat Jain — Portfolio Website
+
 Welcome to my personal portfolio website built with **React.js**, **Framer Motion**, and **modern UI design** principles.
 It showcases my work, projects, skills, and journey as a developer passionate about **AI, ML, and Web Technologies**.
 
@@ -63,6 +64,7 @@ If you’d like to collaborate or just say hi 👋, feel free to reach out!
 * 📧 **Email:** [rajatjain3366@gmail.com](mailto:rajatjain3366@gmail.com)
 * 💼 **LinkedIn:** [linkedin.com/in/rajatjain3366/](https://www.linkedin.com/in/rajatjain3366/)
 * 🐙 **GitHub:** [github.com/rajatjain3366](https://github.com/rajatjain3366)
+
 ---
 
 ## 🌟 Deployment
