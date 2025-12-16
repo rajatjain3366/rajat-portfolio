@@ -2,7 +2,7 @@
 Welcome to my personal portfolio website built with **React.js**, **Framer Motion**, and **modern UI design** principles.
 It showcases my work, projects, skills, and journey as a developer passionate about **AI, ML, and Web Technologies**.
 
-🌐 **Website:** [[[rajat-Portfolio]]](https://rajat-jain.vercel.app/)
+🌐 **Website:** [[[rajat-Portfolio]]](https://rajat-jain-portfolio.netlify.app/)
 
 🖼️ **Screenshots**
 <!-- <img width="1902" height="994" alt="Screenshot 2025-11-03 232447" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
@@ -40,10 +40,10 @@ To run this project locally:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/rajatjain3366/rajatjain-portfolio.git
+git clone https://github.com/rajatjain3366/rajat-portfolio.git
 
 # 2️⃣ Navigate to project directory
-cd rajatjain-portfolio
+cd rajat-portfolio
 
 # 3️⃣ Install dependencies
 npm install
@@ -52,7 +52,7 @@ npm install
 npm start or npm run dev
 ```
 
-Now open [http://localhost:3000](http://localhost:3000) in your browser 🚀
+Now open [http://localhost:5173](http://localhost:5173/) in your browser 🚀
 
 ---
 
@@ -62,13 +62,13 @@ If you’d like to collaborate or just say hi 👋, feel free to reach out!
 
 * 📧 **Email:** [rajatjain3366@gmail.com](mailto:rajatjain3366@gmail.com)
 * 💼 **LinkedIn:** [linkedin.com/in/rajatjain3366/](https://www.linkedin.com/in/rajatjain3366/)
-
+* 🐙 **GitHub:** [github.com/rajatjain3366](https://github.com/rajatjain3366)
 ---
 
 ## 🌟 Deployment
 
-Deployed seamlessly on **Vercel** for continuous integration and fast CDN delivery.
-Every push to the `main` branch triggers an automatic rebuild and deployment.
+This project is deployed on Netlify with continuous deployment enabled.
+Every push to the main branch automatically triggers a new build and deployment.
 
 ---
 
