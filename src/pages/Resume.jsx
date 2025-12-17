@@ -112,11 +112,11 @@ export default function Resume() {
             </li>
             <li style={{ marginTop: 8 }}>
               <strong>12th Board — Maharishi Arvind Public School</strong> (CBSE
-              Board, 2022) <br />
+              Board, 2023) <br />
               <span style={{ color: "#aaa" }}>Percentage: 78.6%</span>
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>10th Board — Shree Padam Prabhu Digamber Jain Sec School</strong> (RBSE Board, 2020)
+              <strong>10th Board — Shree Padam Prabhu Digamber Jain Sec School</strong> (RBSE Board, 2021)
               <br />
               <span style={{ color: "#aaa" }}>Percentage: 88%</span>
             </li>
