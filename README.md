@@ -6,9 +6,11 @@ It showcases my work, projects, skills, and journey as a developer passionate ab
 🌐 **Website:** [[[rajat-Portfolio]]](https://rajat-jain-portfolio.netlify.app/)
 
 🖼️ **Screenshots**
-<!-- <img width="1902" height="994" alt="Screenshot 2025-11-03 232447" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
-<img width="1894" height="992" alt="image" src="https://github.com/user-attachments/assets/8a6eeff0-3ebc-446c-a1ac-5f1a02279ac8" />
-<img width="1903" height="1044" alt="Screenshot 2025-11-04 153204" src="https://github.com/user-attachments/assets/355b1c4c-83e6-4465-9081-bff34bb3ad3b" /> -->
+
+<img width="1893" height="981" alt="Screenshot_1" src="https://github.com/user-attachments/assets/440ea511-44aa-432c-8039-14ce94fb62e8" />
+<img width="1893" height="897" alt="Screenshot_2" src="https://github.com/user-attachments/assets/bdc6d073-af7d-4337-992d-7e220288ab88" />
+<img width="1895" height="957" alt="Screenshot_3" src="https://github.com/user-attachments/assets/8b163532-01b9-469c-a4cd-26857b1d4189" />
+
 ---
 
 ## 🚀 Features
