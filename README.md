@@ -5,6 +5,8 @@ It showcases my work, projects, skills, and journey as a developer passionate ab
 
 🌐 **Website:** [[[rajat-Portfolio]]](https://rajat-jain-portfolio.netlify.app/)
 
+---
+
 🖼️ **Screenshots**
 
 <img width="1893" height="981" alt="Screenshot_1" src="https://github.com/user-attachments/assets/440ea511-44aa-432c-8039-14ce94fb62e8" />
