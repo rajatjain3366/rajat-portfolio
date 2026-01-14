@@ -7,8 +7,8 @@ import "../index.css";
 export default function Home() {
   const professions = [
     "Full Stack Developer",
-    "Machine Learning Engineer",
-    "Developer",
+    "DevOps Engineer",
+    "App Developer",
   ];
 
   const quickLinks = [
