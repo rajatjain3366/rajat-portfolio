@@ -30,7 +30,6 @@ const ROWS = [
       title: "Core Concepts",
       items: [
         "Data Structures & Algorithms",
-        "Machine Learning",
       ],
     },
     {

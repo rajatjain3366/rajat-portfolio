@@ -58,7 +58,7 @@ const AboutMe = () => {
         >
           Hi, I’m <strong>Rajat Jain</strong> — an aspiring{" "}
           <strong>Software Engineer</strong> and{" "}
-          <strong>Machine Learning enthusiast</strong> who loves turning ideas
+          <strong>Problem Solving enthusiast</strong> who loves turning ideas
           into intelligent systems. I’m deeply fascinated by how data and
           algorithms can shape the future of healthcare, automation, and
           creativity in technology.
@@ -73,8 +73,7 @@ const AboutMe = () => {
         </p>
 
         <p>
-            2nd-year B.Tech CS Engineering student with hands-on experience in Full Stack Projects. Proficient in Python, scikitlearn,pytorch,tensorflow and data preprocessing. Seeking internship opportunities to apply skills and contribute to
-            impactful AI solutions.
+            2nd-year B.Tech CS Engineering student with hands-on experience in Full Stack Projects.
         </p>
 
         {/* --- Education Section --- */}
