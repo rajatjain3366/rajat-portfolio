@@ -27,14 +27,14 @@ const PROJECTS = [
   //   live: '#',
   //   code: 'https://github.com/kunjdesai/ISL-Interpreter'
   // },
-  // {
-  // title: '💼 Portfolio Website',
-  // desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  // ss: '/portfolio.jpg',
-  // tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-  // live: '#',
-  // code: 'https://github.com/kunj2803/Kunj-Portfolio'
-  // },
+  {
+  title: '💼 Portfolio Website',
+  desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
+  ss: '/portfolio.jpg',
+  tech: ['React', 'Framer Motion', 'Tailwind CSS'],
+  live: 'https://rajat-jain-portfolio.netlify.app/',
+  code: 'https://github.com/rajatjain3366/rajat-portfolio'
+  },
   // {
   //   title: '💬 DocuChat – Gemini AI Chatbot',
   //   desc: 'An intelligent document interaction app powered by Gemini API that understands and answers queries from uploaded PDFs.',
@@ -80,7 +80,7 @@ export default function Projects() {
           🚀 Projects
         </motion.h2>
         <p className="text-gray-400 mb-10">
-          A collection of my major works — blending research, AI innovation.
+          A collection of my major works — blending research, innovation.
         </p>
 
         <div className="projects-grid" style={{ display: 'grid', gap: 24, gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
