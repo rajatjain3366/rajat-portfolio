@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Resume() {
   return (
-    <section className="container" style={{ padding: "60px 0" }}>
+    <section id="resume" className="container" style={{ padding: "60px 0" }}>
       <motion.div
         className="card"
         initial={{ opacity: 0, y: 40 }}

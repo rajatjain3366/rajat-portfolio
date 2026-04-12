@@ -84,6 +84,7 @@ export default function Gallery() {
 
   return (
     <motion.section
+      id="gallery"
       className="gallery-container"
       variants={pageVariants}
       initial="hidden"

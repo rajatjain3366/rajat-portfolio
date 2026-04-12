@@ -1,22 +1,23 @@
 import React, { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  { label: "Home", to: "/" },
-  { label: "Projects", to: "/projects" },
-  { label: "Gallery", to: "/gallery" },
-  { label: "Skills", to: "/skills" },
-  { label: "Certificates", to: "/certificates" },
-  { label: "Blog", to: "/blog" },
-  { label: "Resume", to: "/resume" },
-  { label: "About Me", to: "/about" },
-  { label: "Contact", to: "/contact" },
+  { label: "Home", to: "#home" },
+  { label: "Projects", to: "#projects" },
+  { label: "Gallery", to: "#gallery" },
+  { label: "Skills", to: "#skills" },
+  { label: "Certificates", to: "#certificates" },
+  { label: "Blog", to: "#blog" },
+  { label: "Resume", to: "#resume" },
+  { label: "About Me", to: "#about" },
+  { label: "Contact", to: "#contact" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const navRef = useRef(null);
   const linksRef = useRef(null);
 
@@ -29,7 +30,26 @@ export default function Navbar() {
   useEffect(() => {
     checkOverflow();
     window.addEventListener("resize", checkOverflow);
-    return () => window.removeEventListener("resize", checkOverflow);
+    
+    // Active section scroll tracking
+    const handleScroll = () => {
+      const sectionElements = links.map(link => document.getElementById(link.to.substring(1)));
+      const scrollPosition = window.scrollY + 150; // offset
+
+      for (let i = sectionElements.length - 1; i >= 0; i--) {
+        const section = sectionElements[i];
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(links[i].to.substring(1));
+          break;
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", checkOverflow);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -85,11 +105,12 @@ export default function Navbar() {
             flexGrow: 1,
           }}
         >
-          {links.map((l) => (
-            <NavLink
+          {links.map((l) => {
+            const isActive = activeSection === l.to.substring(1);
+            return (
+            <a
               key={l.to}
-              to={l.to}
-              end
+              href={l.to}
               style={{
                 position: "relative",
                 fontSize: "0.95rem",
@@ -98,46 +119,44 @@ export default function Navbar() {
                 fontWeight: 500,
               }}
             >
-              {({ isActive }) => (
-                <motion.div
-                  whileHover={{
-                    scale: 1.1,
-                    color: "var(--accent)",
-                    textShadow: "0 0 8px var(--accent)",
-                  }}
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  color: "var(--accent)",
+                  textShadow: "0 0 8px var(--accent)",
+                }}
+                transition={{ duration: 0.3 }}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <motion.span
+                  animate={{ color: isActive ? "var(--accent)" : "white" }}
                   transition={{ duration: 0.3 }}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
                 >
-                  <motion.span
-                    animate={{ color: isActive ? "var(--accent)" : "white" }}
+                  {l.label}
+                </motion.span>
+                {isActive && (
+                  <motion.div
+                    layoutId="underline"
+                    initial={{ opacity: 0, y: 5 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                  >
-                    {l.label}
-                  </motion.span>
-                  {isActive && (
-                    <motion.div
-                      layoutId="underline"
-                      initial={{ opacity: 0, y: 5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3 }}
-                      style={{
-                        width: "70%",
-                        height: "2px",
-                        marginTop: "4px",
-                        borderRadius: "1px",
-                        backgroundColor: "var(--accent)",
-                        boxShadow: "0 0 6px var(--accent)",
-                      }}
-                    />
-                  )}
-                </motion.div>
-              )}
-            </NavLink>
-          ))}
+                    style={{
+                      width: "70%",
+                      height: "2px",
+                      marginTop: "4px",
+                      borderRadius: "1px",
+                      backgroundColor: "var(--accent)",
+                      boxShadow: "0 0 6px var(--accent)",
+                    }}
+                  />
+                )}
+              </motion.div>
+            </a>
+          )})}
         </div>
 
         {/* Hamburger */}
@@ -200,9 +219,9 @@ export default function Navbar() {
             </button>
 
             {links.map((l) => (
-              <NavLink
+              <a
                 key={l.to}
-                to={l.to}
+                href={l.to}
                 onClick={() => setIsOpen(false)}
                 style={{
                   color: "#fff",
@@ -215,7 +234,7 @@ export default function Navbar() {
                 }}
               >
                 {l.label}
-              </NavLink>
+              </a>
             ))}
           </motion.div>
         )}

@@ -9,6 +9,7 @@
 }
 *{box-sizing:border-box}
 html,body,#root{height:100%}
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body{
   margin:0;
   background: radial-gradient(800px 500px at 10% 10%, rgba(124,58,237,0.08), transparent 10%),

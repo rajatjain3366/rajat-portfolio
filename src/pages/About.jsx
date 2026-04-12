@@ -5,6 +5,7 @@ import { FaUniversity, FaSchool, FaGraduationCap } from "react-icons/fa";
 const AboutMe = () => {
   return (
     <div
+      id="about"
       style={{
         minHeight: "100vh",
         width: "100%",

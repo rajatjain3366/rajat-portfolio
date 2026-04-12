@@ -40,7 +40,7 @@ export default function Home() {
   ];
 
   return (
-    <section className="home-section">
+    <section id="home" className="home-section">
       {/* Typing Effect Styles */}
       <style>
         {`

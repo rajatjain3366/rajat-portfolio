@@ -88,7 +88,7 @@ export default function Contact() {
   ];
 
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <motion.h1
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
