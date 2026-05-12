@@ -89,14 +89,14 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact-section">
-      <motion.h1
+      <motion.h2
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         className="contact-title"
       >
         Let’s Connect & Collaborate 🤝
-      </motion.h1>
+      </motion.h2>
 
       <motion.p
         initial={{ opacity: 0 }}

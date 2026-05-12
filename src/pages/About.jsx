@@ -21,7 +21,8 @@ const AboutMe = () => {
       {/* --- About Me + Education Section --- */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.4, duration: 0.8 }}
         style={{
           width: "100%",
@@ -80,7 +81,8 @@ const AboutMe = () => {
         {/* --- Education Section --- */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ delay: 0.8, duration: 0.8 }}
           style={{ marginTop: "3rem" }}
         >

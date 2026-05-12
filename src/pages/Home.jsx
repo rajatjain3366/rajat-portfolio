@@ -39,13 +39,35 @@ export default function Home() {
     },
   ];
 
+  const [currentRoleIndex, setCurrentRoleIndex] = React.useState(0);
+  const [displayText, setDisplayText] = React.useState("");
+  const [isDeleting, setIsDeleting] = React.useState(false);
+
+  React.useEffect(() => {
+    const currentFullText = professions[currentRoleIndex];
+    const typingSpeed = isDeleting ? 50 : 100;
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting && displayText === currentFullText) {
+        setTimeout(() => setIsDeleting(true), 1500);
+      } else if (isDeleting && displayText === "") {
+        setIsDeleting(false);
+        setCurrentRoleIndex((prev) => (prev + 1) % professions.length);
+      } else {
+        setDisplayText(currentFullText.substring(0, displayText.length + (isDeleting ? -1 : 1)));
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, currentRoleIndex, professions]);
+
   return (
     <section id="home" className="home-section">
       {/* Typing Effect Styles */}
       <style>
         {`
-          @keyframes typing { from { width: 0; } to { width: 100%; } }
           @keyframes blink { 50% { border-color: transparent; } }
+          .typing-cursor { border-right: 0.15em solid var(--accent); animation: blink .8s infinite; margin-left: 2px; }
         `}
       </style>
 
@@ -98,8 +120,8 @@ export default function Home() {
           </h1>
 
           {/* Typing Animated Text */}
-          <p className="typing-effect">
-            Software Engineer | Backend Developer | Tech Explorer
+          <p style={{ minHeight: '1.5em', fontSize: '1.2rem', color: 'rgba(255,255,255,0.85)', marginTop: '0.4rem' }}>
+            {displayText}<span className="typing-cursor"></span>
           </p>
 
           {/* Profession Tags */}

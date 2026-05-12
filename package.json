@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
     "d3": "^7.9.0",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.6",
