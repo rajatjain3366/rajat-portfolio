@@ -4,23 +4,22 @@ import { motion, AnimatePresence } from "framer-motion";
 // ✅ Certificates data (added URLs for View button)
 const CERTS = {
   tech: [
-    // {
-    //   title: "Flipkart Hackathon",
-    //   org: "Flipkart",
-    //   date: "2022",
-    //   img: "/certs/flipkart.jpg",
-    //   link: "/certs/flipkart.jpg",
-    // },
+    {
+      title: "Complete Data Science, Machine Learning, DL & NLP Bootcamp",
+      org: "Krish Naik (Udemy)",
+      date: "In Progress",
+      img: "/placeholder-cert.jpg", // Placeholder image
+      link: "#",
+    },
+    {
+      title: "The Complete Full-Stack Web Development Bootcamp",
+      org: "Dr. Angela Yu (Udemy)",
+      date: "In Progress",
+      img: "/placeholder-cert.jpg", // Placeholder image
+      link: "#",
+    },
   ],
-  other: [
-    // {
-    //   title: "codathon",
-    //   org: "SCET tech fest",
-    //   date: "2025",
-    //   img: "/certs/codathon.png",
-    //   link: "/certs/codathon.png",
-    // },
-  ],
+  other: [],
 };
 
 export default function Certificates() {

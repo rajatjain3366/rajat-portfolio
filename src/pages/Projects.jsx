@@ -3,62 +3,22 @@ import { motion } from 'framer-motion'
 import { Github, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
-  // {
-  //   title: '🩺 Mammogram Malignancy Detector',
-  //   desc: 'Hybrid CNN + YOLOv8 ensemble for full-image breast cancer detection with ROI preprocessing and sliding-window inference.',
-  //   ss: '/mamo.png',
-  //   tech: ['TensorFlow', 'Keras', 'OpenCV', 'YOLOv8'],
-  //   live: '#',
-  //   code: 'https://github.com/kunjdesai/mammo-detector'
-  // },
-  // {
-  // title: '🧠 Mental Health Analyzer',
-  // desc: 'NLP-based system that analyzes user text to detect signs of anxiety, stress, and depression using sentiment analysis and transformer models.',
-  // ss: '/mentalhealth.jpg',
-  // tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
-  // live: 'https://mental-health-analyzer.streamlit.app/',
-  // code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
-  // },
-  // {
-  //   title: '🤖 Indian Sign Language Interpreter',
-  //   desc: 'Real-time gesture recognition and translation using Mediapipe + TensorFlow, enabling live sign-to-text interpretation.',
-  //   ss: '/ISL.png',
-  //   tech: ['Mediapipe', 'TensorFlow', 'React', 'Flask'],
-  //   live: '#',
-  //   code: 'https://github.com/kunjdesai/ISL-Interpreter'
-  // },
   {
-  title: '💼 Portfolio Website',
-  desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  ss: '/portfolio.jpg',
-  tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-  live: 'https://rajat-jain-portfolio.netlify.app/',
-  code: 'https://github.com/rajatjain3366/rajat-portfolio'
+    title: 'FastAPI Blog API with JWT Authentication',
+    desc: 'A fully functional RESTful Blog API with complete CRUD operations for blog posts and user management. Features JWT-based authentication with bcrypt password hashing, modular router/repository architecture, SQLite database, Pydantic request validation, and auto-generated Swagger UI docs at /docs.',
+    ss: '/fastapi-blog.png', // Using a placeholder image path as none was provided
+    tech: ['Python', 'FastAPI', 'SQLite', 'JWT', 'Pydantic', 'Passlib (bcrypt)'],
+    live: '#',
+    code: 'https://github.com/rajatjain3366/fastapi-blog-api-auth'
   },
-  // {
-  //   title: '💬 DocuChat – Gemini AI Chatbot',
-  //   desc: 'An intelligent document interaction app powered by Gemini API that understands and answers queries from uploaded PDFs.',
-  //   ss: '/Docuchat.png',
-  //   tech: ['Gemini API', 'LangChain', 'Python', 'Streamlit'],
-  //   live: 'https://docuchat-chatbot.streamlit.app/',
-  //   code: 'https://github.com/kunj2803/Docuchat-Chatbot'
-  // },
-  // {
-  //   title: '📊 ProfileX – Data Profiler',
-  //   desc: 'Smart data profiling and preprocessing web app for CSV datasets — feature summary, missing value handling, and visualization.',
-  //   ss: '/ProfileX.png',
-  //   tech: ['Streamlit', 'Pandas', 'Plotly'],
-  //   live: 'https://profilex.streamlit.app/',
-  //   code: 'https://github.com/kunjdesai/ProfileX'
-  // },
-  // {
-  //   title: '🧬 Breast Cancer Prediction',
-  //   desc: 'ML pipeline using SVC, Random Forest, and XGBoost with SMOTE for imbalanced dataset handling and model optimization.',
-  //   ss: '/breastpred.jpg',
-  //   tech: ['scikit-learn', 'XGBoost', 'Pandas'],
-  //   live: '#',
-  //   code: 'https://github.com/kunjdesai/BreastCancerPrediction'
-  // }
+  {
+    title: 'Personal Portfolio Website',
+    desc: 'Responsive portfolio site with modern UI, smooth animations, and mobile-first design. Deployed on Netlify with GitHub-based CI/CD.',
+    ss: '/portfolio.jpg',
+    tech: ['React.js', 'HTML', 'CSS', 'Netlify'],
+    live: 'https://rajat-jain-portfolio.netlify.app/',
+    code: 'https://github.com/rajatjain3366/rajat-portfolio'
+  }
 ]
 
 export default function Projects() {

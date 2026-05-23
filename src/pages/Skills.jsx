@@ -7,35 +7,39 @@ const SKILLS = [
   { name: "C", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
   { name: "C++", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
   { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-  { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Bootstrap", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+  { name: "jQuery", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" },
   { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
   { name: "Express.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "FastAPI", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
   { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "NumPy", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+  { name: "Pandas", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+  { name: "TensorFlow", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
   { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: "Jupyter", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
 ];
 
 const ROWS = [
   [
-    { title: "Programming Languages", items: ["Python", "C", "C++", "Java"] },
-    { title: "Web Technologies", items: ["HTML", "CSS", "Bootstrap", "Tailwind CSS", "JavaScript", "React", "Node.js", "Express.js", "EJS"] },
-    { title: "Databases & Tools", items: ["MySQL", "PostgreSQL", "Git", "GitHub"] },
-    { title: "Frameworks & Libraries", items: ["FastAPI"] },
+    { title: "Languages", items: ["C", "C++", "Python", "Java", "JavaScript"] },
+    { title: "Frontend", items: ["HTML5", "CSS3", "React.js", "Bootstrap 5", "jQuery", "Flexbox", "Grid", "DOM Manipulation"] },
+    { title: "Backend", items: ["Node.js", "Express.js", "EJS", "FastAPI", "REST APIs", "OAuth 2.0", "Authentication"] },
   ],
   [
-    {
-      title: "Core Concepts",
-      items: [
-        "Data Structures & Algorithms",
-      ],
-    },
-    {
-      title: "Soft Skills",
-      items: ["Teamwork", "Problem Solving", "Creativity", "Adaptability", "Communication"],
-    },
+    { title: "Databases", items: ["MySQL", "SQLite", "MongoDB", "Mongoose", "PostgreSQL"] },
+    { title: "Data Science & ML", items: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", "Supervised & Unsupervised Learning"] },
+    { title: "Deep Learning", items: ["TensorFlow", "Keras", "Neural Networks", "CNNs"] },
+    { title: "Tools", items: ["Git", "GitHub", "Netlify", "Postman", "MATLAB", "VS Code", "Jupyter Notebook"] },
   ],
 ];
 
@@ -53,7 +57,7 @@ export default function Skills() {
       placed.some((p) => {
         const dx = p.x - x;
         const dy = p.y - y;
-        return Math.sqrt(dx * dx + dy * dy) < p.size / 2 + size / 2 + 40;
+        return Math.sqrt(dx * dx + dy * dy) < p.size / 2 + size / 2 + 10;
       });
 
     circles.forEach((circle) => {
@@ -63,7 +67,7 @@ export default function Skills() {
         x = Math.random() * (rect.width - size - 20);
         y = Math.random() * (rect.height - size - 20);
         tries++;
-      } while (isOverlapping(x, y, size) && tries < 150);
+      } while (isOverlapping(x, y, size) && tries < 1000);
 
       placed.push({ x, y, size });
       circle.style.left = `${x}px`;
@@ -108,7 +112,7 @@ export default function Skills() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         style={{
           width: "100%",
-          height: "550px",
+          height: "800px",
           borderRadius: "25px",
           background: "radial-gradient(circle at 50% 50%, #0a0a0a, #101010)",
           overflow: "hidden",
@@ -129,8 +133,8 @@ export default function Skills() {
               background: "rgba(0,255,255,0.12)",
             }}
             style={{
-              width: "110px",
-              height: "110px",
+              width: "95px",
+              height: "95px",
               borderRadius: "50%",
               position: "absolute",
               display: "flex",

@@ -58,24 +58,7 @@ const AboutMe = () => {
             marginBottom: "1rem",
           }}
         >
-          Hi, I’m <strong>Rajat Jain</strong> — an aspiring{" "}
-          <strong>Software Engineer</strong> and{" "}
-          <strong>Problem Solving enthusiast</strong> who loves turning ideas
-          into intelligent systems. I’m deeply fascinated by how data and
-          algorithms can shape the future of healthcare, automation, and
-          creativity in technology.
-        </p>
-
-        <p style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.8)" }}>
-          Beyond code, I enjoy exploring design, experimenting with motion and
-          interaction, and finding ways to blend{" "}
-          <strong>artistic creativity</strong> with{" "}
-          <strong>technical precision</strong>. My goal is to build solutions
-          that not only perform — but also inspire.
-        </p>
-
-        <p>
-            2nd-year B.Tech CS Engineering student with hands-on experience in Full Stack Projects.
+          Hi, I’m <strong>Rajat Jain</strong>. I am a B.Tech CSE student at IIIT Sri City (2024–2028) with a CGPA of 8.15. I build full-stack web applications and am currently learning Data Science, Machine Learning, and Deep Learning. Passionate about building end-to-end projects.
         </p>
 
         {/* --- Education Section --- */}
